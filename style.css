@@ -36,6 +36,7 @@ nav1 a {
     color: black;
     padding: 15px;
     font-weight: 700;
+    font-size: 15px; 
 }
 
 nav1 a:hover {
@@ -90,6 +91,7 @@ nav a {
     color: black;
     padding: 15px;
     font-weight: 700;
+    font-size: 15px;
 }
 
 nav a:hover {
