@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DUGAR X-11</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!--   VANIGATION BAR -->
+    <div class="container">
+        <nav1>
+            <a>X-11</a>
+            <a onclick="darkMode()">DARK MODE</a>
+        </nav1>
+    </div>
+<!-- NAVIGATION BAR SELESAI -->
+
+<!-- CONTENT 1 -->
+    <div class="container-content">
+      <img src="contoh.jpg" class="img-content" />
+    </div>
+<!-- CONTENT 1 END -->
+
+<!-- FOOTER -->
+    <div class="container-footer">
+      <h1 class="h1-footer">Tanks World</h1>
+    </div>
+<!-- FOOTER END -->
+
+<!-- NAVBAR FOOTER -->
+    <div class="container">
+        <nav>
+            <a onclick="reRender()">LIGHT MODE</a>
+            <a onclick="darkMode()">DARK MODE</a>
+        </nav>
+    </div>
+<!-- NAVBAR FOOTER END -->
+
+<!-- INITIALIZING FUNCTION SCRIPT -->
+<script>
+    let body = document.body;
+    
+    const darkLimit = 1;
+    let darkCounter = 0;
+    let darkRemainingLeft;
+    
+    
+    function darkMode() {
+        if(darkCounter == darkLimit){
+            return;
+        }
+        
+        darkCounter += 1;
+        let darkRemainingLeft = darkLimit - darkCounter;
+        
+    body.classList.toggle("dark")
+    }
+    
+    function reRender() {
+        location.reload();
+    }
+    
+</script>
+<!-- INITIALIZING FUNCTION SCRIPT END -->
+  </div>
+</body>
+</html>
